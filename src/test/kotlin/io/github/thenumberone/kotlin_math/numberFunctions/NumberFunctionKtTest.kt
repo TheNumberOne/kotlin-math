@@ -34,4 +34,10 @@ class NumberFunctionKtTest {
         assertEquals(factor(16), listOf(Pair(2, 4)))             //16 = 2^4
     }
 
+    @Test
+    fun divisibleBy() {
+        assertTrue(10 divisibleBy 2)
+        assertFalse(54 divisibleBy 7)
+    }
+
 }

@@ -15,7 +15,7 @@ infix fun Int.pow(power : Int) : Int {
 }
 
 infix fun Int.divisibleBy(n : Int) : Boolean {
-    return this % n == 0
+    return n != 0 && this % n == 0
 }
 
 fun sumProperDivisors(n : Int) : Int = sumDivisors(n) - n
